@@ -1,3 +1,4 @@
+const baseUrl = "https://pokeapi.co/api/v2";
 
 // Fetch information of this url 
 // async function getPokemonData(pokemonName) {

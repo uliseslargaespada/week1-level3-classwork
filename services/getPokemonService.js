@@ -1,4 +1,4 @@
-const baseUrl = 'https://pokeapi.co/api/v2';
+const baseUrl = "https://pokeapi.co/api/v2";
 
 // Base function for API requests
 // A UTIL function
