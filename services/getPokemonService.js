@@ -9,12 +9,12 @@ async function makeAPIRequest(endpoint) {
 
     return {
       success: true,
-      data: data
+      data
     };
   } catch (error) {
     return {
       success: false,
-      error: error
+      error
     };
   }
 }

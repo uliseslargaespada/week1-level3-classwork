@@ -45,3 +45,5 @@ async function fetchPokemon(pokemonName) {
     return error;
   }
 }
+
+export { fetchPokemon };

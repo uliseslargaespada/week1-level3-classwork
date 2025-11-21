@@ -1,5 +1,5 @@
 // Imports
-import { getPokemonAPI } from './services/getPokemonService.js'
+import { getPokemonAPI } from './services/getPokemonService.js';
 import renderPokemonResponse from './components/renderPokemonResponse.js';
 
 // My variables
