@@ -1,4 +1,4 @@
-const baseUrl = 'https://pokeapi.co/api/v2';
+const baseUrl = "https://pokeapi.co/api/v2";
 
 // Base function for API requests
 // A UTIL function
@@ -9,12 +9,12 @@ async function makeAPIRequest(endpoint) {
 
     return {
       success: true,
-      data: data
+      data
     };
   } catch (error) {
     return {
       success: false,
-      error: error
+      error
     };
   }
 }

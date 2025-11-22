@@ -1,4 +1,4 @@
-function renderPokemonResponse(apiResponse) {
+function renderPokemonResponse(apiResponse, contentElement) {
   if (apiResponse.success) {
     // Display the pokemon name
     const pokemon = apiResponse.data;
@@ -14,9 +14,9 @@ function renderPokemonResponse(apiResponse) {
     //   }
     // });
 
-    const typesString = typesArray.map(type => type.type.name).join(', ');
+    const typesString = typesArray.map(type => type.type.name).join(", ");
 
-    content.innerHTML = `
+    contentElement.innerHTML = `
       <div class="card" style="width: 18rem;">
         <img src="${pokemon.sprites.front_default}" class="card-img-top" alt="Sprite image of ${pokemon.name}">
         <div class="card-body">
@@ -28,14 +28,14 @@ function renderPokemonResponse(apiResponse) {
           </ul>
         </div>
       </div>
-    `
+    `;
   } else {
     // Display the error message
     const { error } = apiResponse;
 
-    content.innerHTML = `
+    contentElement.innerHTML = `
       <h2 class="text-danger">The API failed because: ${error.message}</h2>
-    `
+    `;
   }
 }
 
