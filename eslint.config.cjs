@@ -148,7 +148,7 @@ module.exports = [
       "complexity": ["warn", 10],          // Max cyclomatic complexity
       "max-depth": ["warn", 4],            // Max nesting depth
       "max-len": ["warn", {                // Max line length
-        "code": 100,
+        "code": 150,
         "ignoreUrls": true,
         "ignoreStrings": true,
         "ignoreTemplateLiterals": true,
